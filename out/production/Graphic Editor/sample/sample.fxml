@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.ToggleButton?>
@@ -13,21 +15,22 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="500.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="530.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
+      <ColumnConstraints maxWidth="816.0" minWidth="505.0" prefWidth="505.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
       <RowConstraints />
    </rowConstraints>
    <children>
-      <FlowPane prefHeight="490.0" prefWidth="315.0">
+      <FlowPane prefHeight="545.0" prefWidth="635.0">
          <children>
             <VBox prefHeight="77.0" prefWidth="505.0">
                <children>
@@ -57,6 +60,7 @@
                         <Label fx:id="sizeValue" prefHeight="21.0" prefWidth="51.0" text="   size" />
                         <Slider fx:id="sizeSlider" min="1.0" prefHeight="18.0" prefWidth="124.0" />
                         <ColorPicker fx:id="color" />
+                        <CheckBox fx:id="fill" mnemonicParsing="false" text="Fill" />
                      </items>
                   </ToolBar>
                </children>
@@ -90,7 +94,7 @@
                      <font>
                         <Font size="9.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="crop" layoutX="10.0" layoutY="85.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="CR" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <ToggleButton fx:id="text" layoutX="10.0" layoutY="85.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="CR" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="9.0" />
                      </font></ToggleButton>
@@ -108,7 +112,10 @@
                      </font></ToggleButton>
                </children>
             </GridPane>
-            <Canvas fx:id="canvas" height="450.0" width="450.0" />
+            <ScrollBar orientation="VERTICAL" fx:id="verticalScroll"/>
+            <Canvas fx:id="canvas" height="430.0" style="-fx-background-color: white;" width="434.0" />
+            <Pane prefHeight="18.0" prefWidth="66.0" />
+            <ScrollBar prefHeight="18.0" prefWidth="439.0" fx:id="horizonScroll"/>
          </children></FlowPane>
    </children>
 </GridPane>

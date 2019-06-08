@@ -1,13 +1,10 @@
 package sample;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.ColorPicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
 import javafx.scene.control.Slider;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
@@ -18,6 +15,7 @@ import javafx.scene.control.CheckBox;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.paint.Color;
+import javafx.scene.control.Alert;
 
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -39,9 +37,6 @@ public class Controller {
     private ToggleButton erase;
 
     @FXML
-    private ToggleButton gradient;
-
-    @FXML
     private ToggleButton text;
 
     @FXML
@@ -57,35 +52,8 @@ public class Controller {
     private ToggleButton colorPicker;
 
     @FXML
-    private Label sizeValue;
-
-    @FXML
     private Slider sizeSlider;
 
-    @FXML
-    private MenuItem newFile;
-
-    @FXML
-    private MenuItem openFile;
-
-    @FXML
-    private MenuItem saveAs;
-
-    @FXML
-    private MenuItem rotate90clockwise;
-
-    @FXML
-    private MenuItem rotate90counterClockwise;
-
-    @FXML
-    private MenuItem flipHorizon;
-
-
-    @FXML
-    private MenuItem flipVertical;
-
-    @FXML
-    private Menu exit;
 
     @FXML
     private CheckBox fill;
@@ -95,6 +63,9 @@ public class Controller {
 
     @FXML
     private ScrollBar verticalScroll;
+
+    @FXML
+    public static Stage STAGE;
 
     private GraphicsContext cntx;
 
@@ -150,7 +121,18 @@ public class Controller {
 
 
     public void onExit(){
-        System.exit(0);
+        System.out.println("Try exit");
+        STAGE.close();
+    }
+
+    public void onInfo(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+        alert.setTitle("Information");
+        alert.setHeaderText(null);
+        alert.setContentText("This program was created be Karherine Yatskiv, Computer Science Student of Kyiv-Mohyla Academy" + '\n' + "You can see open code on github" + '\n' + "https://github.com/kathyatskiv/Graphic-Editor");
+
+        alert.showAndWait();
     }
 
     public void onRotate90clockwise(){

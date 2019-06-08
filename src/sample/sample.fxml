@@ -52,12 +52,17 @@
                               <MenuItem fx:id="flipVertical" mnemonicParsing="false" onAction="#onFlipVertical" text="Flip vertical" />
                         </items>
                       </Menu>
-                        <Menu fx:id="exit" mnemonicParsing="false" onAction="#onExit" text="Exit" />
+                        <Menu mnemonicParsing="false" text="Help">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#onExit" text="Exit" />
+                              <MenuItem mnemonicParsing="false" onAction="#onInfo" text="Info" />
+                          </items>
+                        </Menu>
                     </menus>
                   </MenuBar>
                   <ToolBar prefHeight="41.0" prefWidth="510.0">
                      <items>
-                        <Label fx:id="sizeValue" prefHeight="21.0" prefWidth="51.0" text="   size" />
+                        <Label fx:id="sizeValue" prefHeight="21.0" prefWidth="40.0" text="   size" />
                         <Slider fx:id="sizeSlider" min="1.0" prefHeight="18.0" prefWidth="124.0" />
                         <ColorPicker fx:id="color" />
                         <CheckBox fx:id="fill" mnemonicParsing="false" text="Fill" />
@@ -104,7 +109,7 @@
                      </font></ToggleButton>
                   <ToggleButton fx:id="oval" layoutX="10.0" layoutY="60.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="O" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
-                        <Font size="12.0" />
+                        <Font size="11.0" />
                      </font></ToggleButton>
                   <ToggleButton fx:id="stroke" layoutX="35.0" layoutY="35.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="S" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
@@ -112,10 +117,10 @@
                      </font></ToggleButton>
                </children>
             </GridPane>
-            <ScrollBar orientation="VERTICAL" fx:id="verticalScroll"/>
+            <ScrollBar fx:id="verticalScroll" orientation="VERTICAL" />
             <Canvas fx:id="canvas" height="430.0" style="-fx-background-color: white;" width="434.0" />
             <Pane prefHeight="18.0" prefWidth="66.0" />
-            <ScrollBar prefHeight="18.0" prefWidth="439.0" fx:id="horizonScroll"/>
+            <ScrollBar fx:id="horizonScroll" prefHeight="18.0" prefWidth="439.0" />
          </children></FlowPane>
    </children>
 </GridPane>

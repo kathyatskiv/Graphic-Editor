@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="added scroll, shapes, filled shapes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphic Editor/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphic Editor/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphic Editor/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphic Editor/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graphic Editor/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graphic Editor/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,16 +81,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="620" />
-          <entry key="java" value="7844" />
+          <entry key="fxml" value="653" />
+          <entry key="java" value="8214" />
           <entry key="txt" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7844" />
+          <entry key="JAVA" value="8214" />
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="XML" value="620" />
+          <entry key="XML" value="653" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -113,10 +113,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="73" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="73" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#976#978#0" />
               </folding>
             </state>
@@ -124,25 +123,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ToolPaint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="218" column="41" selection-start-line="218" selection-start-column="41" selection-end-line="218" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1513#1514#0" expanded="true" />
-                <element signature="e#1541#1542#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="57" column="81" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -150,22 +135,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="202" column="50" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+            <state relative-caret-position="-3408">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2467#2468#0" expanded="true" />
-                <element signature="e#2498#2499#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/canvas/GraphicsContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-265">
-              <caret line="2656" column="7" lean-forward="true" selection-start-line="2656" selection-start-column="7" selection-end-line="2656" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -196,10 +170,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/test.java" />
         <option value="$PROJECT_DIR$/src/sample/ToolPaint.java" />
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
       </list>
     </option>
@@ -274,7 +248,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559947145981" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560008544239" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -450,7 +424,7 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1559842053156" duration="47800000" />
+      <workItem from="1559842053156" duration="49829000" />
     </task>
     <task id="LOCAL-00001" summary="added scroll, shapes, filled shapes">
       <created>1559947041705</created>
@@ -466,11 +440,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559947150441</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added scroll, shapes, filled shapes">
+      <created>1559947172179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559947172179</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49102000" />
+    <option name="totallyTimeSpent" value="51131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -487,7 +468,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4794326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -498,7 +479,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" />
-      <window_info active="true" anchor="bottom" id="Messages" order="13" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32907802" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -507,7 +488,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="6" />
       <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.0" />
+      <window_info anchor="right" id="Database" order="8" weight="0.0" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.0020134228" />
     </layout>
     <layout-to-restore>
@@ -522,7 +503,7 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.032624114" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.4794326" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -533,7 +514,7 @@
       <window_info anchor="bottom" id="Changes" order="12" />
       <window_info anchor="bottom" id="Profiler" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -541,9 +522,9 @@
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.0020134228" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.0" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.0020134228" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/canvas/GraphicsContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="2656" column="7" lean-forward="true" selection-start-line="2656" selection-start-column="7" selection-end-line="2656" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8721">
@@ -617,17 +591,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1496#1497#0" expanded="true" />
             <element signature="e#1524#1525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#976#978#0" />
           </folding>
         </state>
       </provider>
@@ -644,22 +607,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/canvas/GraphicsContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="-4817">
+          <caret line="2656" column="7" lean-forward="true" selection-start-line="2656" selection-start-column="7" selection-end-line="2656" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="57" column="81" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#976#978#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="202" column="50" selection-start-line="202" selection-start-column="50" selection-end-line="202" selection-end-column="50" />
+        <state relative-caret-position="-3408">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2467#2468#0" expanded="true" />
-            <element signature="e#2498#2499#0" expanded="true" />
           </folding>
         </state>
       </provider>

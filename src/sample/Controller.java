@@ -65,6 +65,9 @@ public class Controller {
     private ScrollBar verticalScroll;
 
     @FXML
+    private ToggleButton crop;
+
+    @FXML
     public static Stage STAGE;
 
     private GraphicsContext cntx;
@@ -169,14 +172,15 @@ public class Controller {
 
     public void onNew(){
         cntx.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
-        Image whiteCanvas = canvas.snapshot(null,null);
-        cntx.drawImage(whiteCanvas, 0, 0, canvas.getWidth(), canvas.getHeight());
+        if(fill.isSelected()){
+            cntx.setFill(color.getValue());
+            cntx.fillRect(0,0,canvas.getWidth(), canvas.getHeight());
+        }
+        Image canvasImg = canvas.snapshot(null,null);
+        cntx.drawImage(canvasImg, 0, 0, canvas.getWidth(), canvas.getHeight());
         currentImage = null;
     }
 
-    public void onText(){
-
-    }
 
     public void initialize(){
         cntx = canvas.getGraphicsContext2D();
@@ -222,7 +226,7 @@ public class Controller {
         colorPicker.setToggleGroup(tools);
         rectangle.setToggleGroup(tools);
         oval.setToggleGroup(tools);
-        text.setToggleGroup(tools);
+        crop.setToggleGroup(tools);
 
         Image whiteCanvas = canvas.snapshot(null,null);
         cntx.drawImage(whiteCanvas, 0, 0, canvas.getWidth(), canvas.getHeight());
@@ -230,14 +234,14 @@ public class Controller {
         canvas.setOnMousePressed(e1 -> {
 
             //Rectangle, oval, stroke drowing
-
-            if(stroke.isSelected() || oval.isSelected() || rectangle.isSelected()) {
+            if(stroke.isSelected() || oval.isSelected() || rectangle.isSelected() || crop.isSelected()) {
                 double startX = e1.getX();
                 double startY = e1.getY();
 
                 cntx.setStroke(color.getValue());
                 cntx.setLineWidth(sizeSlider.getValue());
-                cntx.setFill(color.getValue());
+                if(!crop.isSelected()) cntx.setFill(color.getValue());
+                else cntx.setFill(Color.BLACK);
 
                 Image img = canvas.snapshot(null,null);
                 currentImageSnapshot = img;
@@ -258,7 +262,22 @@ public class Controller {
                         cntx.fillRect(Math.min(startX,finishX), Math.min(startY, finishY), Math.abs(startX-finishX), Math.abs(startY-finishY));
                     else if(rectangle.isSelected())
                         cntx.strokeRect(Math.min(startX,finishX), Math.min(startY, finishY), Math.abs(startX-finishX), Math.abs(startY-finishY));
+                    else if(crop.isSelected()){
+                        cntx.setLineWidth(2);
+                        cntx.setFill(Color.BLACK);
+                        cntx.setLineDashes(2d, 10d);
+                        cntx.strokeRect(Math.min(startX,finishX), Math.min(startY, finishY), Math.abs(startX-finishX), Math.abs(startY-finishY));
+                        double x0 = Math.min(startX,finishX);
+                        double y0 = Math.min(startY, finishY);
+                        double w = Math.abs(startX-finishX);
+                        double h = Math.abs(startY-finishY);
+                        Image snapshot = canvas.snapshot(null,null);
 
+                        canvas.setOnMouseReleased(e3 ->{
+                            if(crop.isSelected())
+                                cntx.drawImage(snapshot, x0 + 2, y0 + 2, w - 4, h - 4, 0,0, canvas.getWidth(), canvas.getHeight());
+                        });
+                    }
                 });
 
             //Brush and erase

@@ -91,15 +91,11 @@
                      <font>
                         <Font size="11.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="gradient" layoutX="10.0" layoutY="10.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="G" GridPane.columnIndex="1">
-                     <font>
-                        <Font size="11.0" />
-                     </font></ToggleButton>
                   <ToggleButton fx:id="colorPicker" layoutX="10.0" layoutY="10.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="CP" GridPane.rowIndex="1">
                      <font>
                         <Font size="9.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="text" layoutX="10.0" layoutY="85.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="CR" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <ToggleButton fx:id="crop" layoutX="10.0" layoutY="85.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="CR" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="9.0" />
                      </font></ToggleButton>
@@ -111,7 +107,7 @@
                      <font>
                         <Font size="11.0" />
                      </font></ToggleButton>
-                  <ToggleButton fx:id="stroke" layoutX="35.0" layoutY="35.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="S" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <ToggleButton fx:id="stroke" layoutX="35.0" layoutY="35.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" text="S" GridPane.columnIndex="1" >
                      <font>
                         <Font size="11.0" />
                      </font></ToggleButton>
